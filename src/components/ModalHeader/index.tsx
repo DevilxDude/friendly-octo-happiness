@@ -15,7 +15,7 @@ const ModalHeader = () => {
   const [value, setValue] = useState("");
 
   return (
-    <Grid justify="space-between" align="center">
+    <Grid justify="space-between" align="center" px="lg">
       <Grid.Col span="content">
         <Text fw={600} size="md">
           Voucher - Minimal coupon

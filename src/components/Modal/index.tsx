@@ -4,6 +4,7 @@ import {
   Modal as MantineModal,
   Divider,
   Grid,
+  rem,
 } from "@mantine/core";
 import ModalFooter from "../ModalFooter";
 import ModalHeader from "../ModalHeader";
@@ -19,13 +20,22 @@ const Modal: FC<ModalProps> = (props) => {
 
   return (
     <MantineModal
+      styles={{
+        header: {
+          paddingBottom: rem("12px"),
+          paddingRight: rem("15px"),
+        },
+        body: {
+          padding: 0,
+        },
+      }}
       centered
       size={900}
       radius="lg"
       closeOnClickOutside={false}
       {...props}
     >
-      <Divider my="sm" color="gray.2" />
+      <Divider mb="sm" color="gray.2" />
 
       <ModalHeader />
 

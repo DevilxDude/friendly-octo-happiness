@@ -8,7 +8,7 @@ export type ModalFooterProps = {
 
 const ModalFooter: FC<ModalFooterProps> = ({ closeModal }) => {
   return (
-    <Grid justify="space-between" align="center">
+    <Grid justify="space-between" align="center" px="lg" pb="sm">
       <Grid.Col span="content">
         <Button
           onClick={closeModal}

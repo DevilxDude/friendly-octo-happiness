@@ -54,7 +54,7 @@ const CategorySelector = () => {
         label="Choose sizes from all categories"
       />
       <ScrollArea h={400}>
-        <Grid>
+        <Grid pr="lg" pb="xl">
           {categories.map((category) => (
             <Grid.Col span={3}>
               <CategorySelect

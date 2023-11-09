@@ -57,7 +57,7 @@ const CategorySelect: FC<CategorySelectProps> = ({
           </UnstyledButton>
         </AspectRatio>
       </div>
-      <Flex mt="sm" mb={rem("4px")} gap={rem("4px")} align="flex-start">
+      <Flex mt="sm" gap={rem("4px")} align="flex-start">
         <Box>
           <IconPhoto
             style={{ width: rem(18), height: rem(18) }}
@@ -71,7 +71,7 @@ const CategorySelect: FC<CategorySelectProps> = ({
           </Text>
         </Tooltip>
       </Flex>
-      <Text size="xs" c="gray.6" fw={500} truncate="end">
+      <Text size="xs" c="gray.6" fw={500}>
         {category.dimension.width}x{category.dimension.height}
       </Text>
     </div>
