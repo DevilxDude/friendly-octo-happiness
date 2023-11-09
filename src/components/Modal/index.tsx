@@ -8,6 +8,7 @@ import {
 import ModalFooter from "../ModalFooter";
 import ModalHeader from "../ModalHeader";
 import Navbar from "../Navbar";
+import CategorySelector from "../CategorySelector";
 
 const Modal: FC<ModalProps> = (props) => {
   const closeModal = useCallback(() => {
@@ -33,6 +34,9 @@ const Modal: FC<ModalProps> = (props) => {
       <Grid>
         <Grid.Col span="content">
           <Navbar />
+        </Grid.Col>
+        <Grid.Col span="content">
+          <CategorySelector />
         </Grid.Col>
       </Grid>
 

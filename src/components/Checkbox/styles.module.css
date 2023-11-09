@@ -1,0 +1,5 @@
+.checkbox {
+  input:checked {
+    border-color: var(--mantine-color-primary-5);
+  }
+}
