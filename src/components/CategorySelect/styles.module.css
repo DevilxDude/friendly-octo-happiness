@@ -1,0 +1,41 @@
+.root {
+  position: relative;
+  width: 100%;
+}
+
+.control {
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-6)
+  );
+  border: rem(2px) solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  padding: rem(6px);
+
+  border-radius: var(--mantine-radius-md);
+  transition: border-color 100ms ease;
+
+  &[data-checked="true"] {
+    border-color: var(--mantine-color-primary-filled);
+  }
+}
+
+.checkboxWrapper {
+  position: absolute;
+  top: var(--mantine-spacing-md);
+  left: var(--mantine-spacing-md);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.checkbox {
+  &:not(:checked) {
+    background-color: var(--mantine-color-body);
+  }
+}
+
+.preview {
+  height: rem(96px);
+  max-width: rem(134px);
+  border-radius: var(--mantine-radius-sm);
+}

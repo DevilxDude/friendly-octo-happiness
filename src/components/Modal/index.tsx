@@ -20,7 +20,7 @@ const Modal: FC<ModalProps> = (props) => {
   return (
     <MantineModal
       centered
-      size={800}
+      size={900}
       radius="lg"
       closeOnClickOutside={false}
       {...props}
@@ -32,10 +32,10 @@ const Modal: FC<ModalProps> = (props) => {
       <Divider mt="sm" color="gray.2" />
 
       <Grid>
-        <Grid.Col span="content">
+        <Grid.Col span={3}>
           <Navbar />
         </Grid.Col>
-        <Grid.Col span="content">
+        <Grid.Col span={9}>
           <CategorySelector />
         </Grid.Col>
       </Grid>

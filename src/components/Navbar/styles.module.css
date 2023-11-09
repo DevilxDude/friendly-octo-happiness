@@ -4,6 +4,7 @@
   flex-direction: column;
   border-right: rem(1px) solid
     light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-3));
+  height: 100%;
 }
 
 .navbarMain {
