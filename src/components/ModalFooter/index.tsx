@@ -25,7 +25,9 @@ const ModalFooter: FC<ModalFooterProps> = ({ closeModal }) => {
         </Button>
       </Grid.Col>
       <Grid.Col span="content">
-        <Button size="sm">Confirm</Button>
+        <Button size="sm" px="xs">
+          Confirm
+        </Button>
       </Grid.Col>
     </Grid>
   );

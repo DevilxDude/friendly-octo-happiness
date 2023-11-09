@@ -1,7 +1,13 @@
 import { FC, useCallback } from "react";
-import { ModalProps, Modal as MantineModal, Divider } from "@mantine/core";
+import {
+  ModalProps,
+  Modal as MantineModal,
+  Divider,
+  Grid,
+} from "@mantine/core";
 import ModalFooter from "../ModalFooter";
 import ModalHeader from "../ModalHeader";
+import Navbar from "../Navbar";
 
 const Modal: FC<ModalProps> = (props) => {
   const closeModal = useCallback(() => {
@@ -19,9 +25,19 @@ const Modal: FC<ModalProps> = (props) => {
       {...props}
     >
       <Divider my="sm" color="gray.2" />
+
       <ModalHeader />
-      <Divider my="sm" color="gray.2" />
-      <Divider my="sm" color="gray.2" />
+
+      <Divider mt="sm" color="gray.2" />
+
+      <Grid>
+        <Grid.Col span="content">
+          <Navbar />
+        </Grid.Col>
+      </Grid>
+
+      <Divider mb="sm" color="gray.2" />
+
       <ModalFooter closeModal={closeModal} />
     </MantineModal>
   );
