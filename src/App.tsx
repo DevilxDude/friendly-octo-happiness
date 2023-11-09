@@ -1,10 +1,9 @@
 import "@mantine/core/styles.css";
-import { Button, MantineProvider, rem } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import { theme } from "./theme";
-import { IconTicket } from "@tabler/icons-react";
-import classes from "./App.module.css";
 import Modal from "./components/Modal";
 import { useCallback, useState } from "react";
+import OpenModalButton from "./components/OpenModalButton";
 
 export default function App() {
   const [opened, setOpened] = useState(false);
@@ -19,24 +18,8 @@ export default function App() {
 
   return (
     <MantineProvider theme={theme}>
-      <div className={classes.container}>
-        <Button
-          onClick={handleOpen}
-          rightSection={
-            <IconTicket
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          }
-          pr={12}
-        >
-          <div className={classes.okay}>okay</div>
-          Create Voucher
-        </Button>
-      </div>
-      <Modal opened={opened} onClose={handleClose}>
-        Modal Content
-      </Modal>
+      <OpenModalButton onClick={handleOpen} />
+      <Modal opened={opened} onClose={handleClose} />
     </MantineProvider>
   );
 }

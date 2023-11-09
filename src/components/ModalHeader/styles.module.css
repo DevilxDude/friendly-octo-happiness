@@ -1,0 +1,7 @@
+.input {
+  width: rem(250px);
+}
+
+.dropdown {
+  color: var(--mantine-color-dark-4);
+}
