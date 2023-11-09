@@ -15,6 +15,10 @@
   border-radius: var(--mantine-radius-md);
   transition: border-color 100ms ease;
 
+  &:hover {
+    background-color: var(--mantine-color-primary-0);
+  }
+
   &[data-checked="true"] {
     border-color: var(--mantine-color-primary-filled);
   }
