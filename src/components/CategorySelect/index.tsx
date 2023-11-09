@@ -57,14 +57,16 @@ const CategorySelect: FC<CategorySelectProps> = ({
           </UnstyledButton>
         </AspectRatio>
       </div>
-      <Flex mt="sm" mb={rem("6px")} gap={rem("4px")} align="center">
-        <IconPhoto
-          style={{ width: rem(24), height: rem(24) }}
-          stroke={1.5}
-          color="var(--mantine-color-gray-6)"
-        />
+      <Flex mt="sm" mb={rem("4px")} gap={rem("4px")} align="flex-start">
+        <Box>
+          <IconPhoto
+            style={{ width: rem(18), height: rem(18) }}
+            stroke={1.5}
+            color="var(--mantine-color-gray-6)"
+          />
+        </Box>
         <Tooltip label={category.title}>
-          <Text size="xs" fw={500} truncate="end">
+          <Text size="xs" fw={500} truncate="end" lh={rem(18)}>
             {category.title}
           </Text>
         </Tooltip>
