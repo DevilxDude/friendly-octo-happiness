@@ -33,6 +33,9 @@ const Modal: FC<ModalProps> = (props) => {
       size={900}
       radius="lg"
       closeOnClickOutside={false}
+      closeButtonProps={{
+        size: "sm",
+      }}
       {...props}
     >
       <Divider mb="sm" color="gray.2" />
