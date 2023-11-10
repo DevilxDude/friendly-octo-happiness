@@ -1,7 +1,13 @@
 # Frontend UI Assignment for Technical Round
 
->Install - npm ci
+Deployed Link: [https://musical-palmier-84cd8f.netlify.app/](https://musical-palmier-84cd8f.netlify.app/)
 
->Run - npm run dev
+Browse Code Base: [https://github.dev/DevilxDude/friendly-octo-happiness](https://github.dev/DevilxDude/friendly-octo-happiness)
 
->Build - npm runbuild
+> Install - yarn install
+
+> Run - yarn run dev
+
+> Build - yarn run build
+
+> Preview - yarn run preview
