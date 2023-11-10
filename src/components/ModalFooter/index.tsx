@@ -1,6 +1,7 @@
+import { FC } from "react";
 import { Button, Grid, rem } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
-import { FC } from "react";
+import classes from "./styles.module.css";
 
 export type ModalFooterProps = {
   closeModal: () => void;
@@ -11,6 +12,7 @@ const ModalFooter: FC<ModalFooterProps> = ({ closeModal }) => {
     <Grid justify="space-between" align="center" px="lg" pb="sm">
       <Grid.Col span="content">
         <Button
+          className={classes.backButton}
           onClick={closeModal}
           variant="transparent"
           size="compact-sm"
